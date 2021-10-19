@@ -1,0 +1,10 @@
+.text{
+    color: rgb(29, 173, 173);;
+}
+.custom{
+    text-align: justify;
+    padding: 10px;
+}
+.banner-text{
+    text-shadow: 2px 2px #385d96;
+}

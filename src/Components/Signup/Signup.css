@@ -1,0 +1,9 @@
+.my-btn{
+    border: none;
+    color: rgb(9, 53, 126);
+    background-color: white;
+}
+.column{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
