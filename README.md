@@ -1,9 +1,18 @@
-*Website Name
-Heath Grade diagnostic center 
 
-*Description
-This Following website helps you to get services from your home.It's help you to know about our services.when you Login our website you can know about details.People can easily can contact and know about this lab and their services.
+- Heath Grade diagnostic center 
+
+- This website presents you a diagnostic lab.
+
+-  From the homepage you'll get to explore the whole system. You can know about our location, our services, our contact info, our physicians and so on.
 
 
-*Live Site
+- We'll also provide you the service details right there so that you can have a clear idea. 
+
+- You will be also able to create your own profile there to keep track of your medical diagnostics.
+
+
+
+
+
+**Live Site
 https://healthcare-related-websi-e5c6e.web.app/ 

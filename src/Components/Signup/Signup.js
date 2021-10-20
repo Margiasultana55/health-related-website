@@ -1,16 +1,17 @@
 
 import React from 'react';
-import useFirebase from '../../hook/useFirebase';
+
 import { FaGoogle } from 'react-icons/fa';
 
 import './Signup.css';
+import useAuth from '../../hook/useAuth';
 
 
 
 
 const Signup = () => {
 
-    const { handleEmail, handlePass, signInUsingEmail, error, toggleLogin, isLogin, signInUsingGoole, } = useFirebase();
+    const { handleEmail, handlePass, signInUsingEmail, error, toggleLogin, isLogin, signInUsingGoole, } = useAuth();
     return (
         <div>
             <h1 className='text-center text mt-5 mb-5'> Please {isLogin ? 'Login' : 'Signup'}</h1>

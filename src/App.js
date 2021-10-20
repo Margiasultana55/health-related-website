@@ -13,6 +13,12 @@ import Signup from './Components/Signup/Signup';
 
 import Services from './Components/Services/Services';
 import Notfound from './Components/Notfound/Notfound';
+import Detail from './Components/Detail/Detail';
+import AuthProvider from './contexts/AuthProvider';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+
+
+
 
 
 
@@ -21,48 +27,55 @@ import Notfound from './Components/Notfound/Notfound';
 function App() {
   return (
     <div className="">
-      <BrowserRouter>
-        <Header></Header>
-        <Switch>
-          <Route exact path='/'>
+      <AuthProvider>
+        <BrowserRouter>
+          <Header></Header>
+          <Switch>
+            <Route exact path='/'>
 
-            <Banner></Banner>
-            <Footer></Footer>
-          </Route>
-          <Route path='/home'>
+              <Banner></Banner>
+              <Footer></Footer>
+            </Route>
+            <Route path='/home'>
 
-            <Banner></Banner>
-            <Footer></Footer>
-          </Route>
-          <Route path='/services'>
-            <Services></Services>
+              <Banner></Banner>
+              <Footer></Footer>
+            </Route>
+            <Route path='/services'>
+              <Services></Services>
 
-          </Route>
-          <Route path='/about'>
-            <About></About>
-
-
-          </Route>
-          <Route path='/physician'>
-            <Physician></Physician>
-
-          </Route>
-          <Route path='/signup'>
-            <Signup></Signup>
-
-          </Route>
+            </Route>
+            <Route path='/about'>
+              <About></About>
 
 
+            </Route>
+            <Route path='/physician'>
+              <Physician></Physician>
 
-          <Route exact path='/*'>
-            <Notfound></Notfound>
+            </Route>
+            <Route path='/signup'>
+              <Signup></Signup>
 
-          </Route>
+            </Route>
+            <PrivateRoute path='/detail/:serviceId'>
+              <Detail></Detail>
 
-        </Switch>
+            </PrivateRoute>
 
 
-      </BrowserRouter>
+
+
+            <Route exact path='*'>
+              <Notfound></Notfound>
+
+            </Route>
+
+          </Switch>
+
+
+        </BrowserRouter>
+      </AuthProvider>
 
 
 

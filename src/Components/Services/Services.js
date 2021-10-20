@@ -5,6 +5,7 @@ import './Services.css'
 
 const Services = () => {
     const [services, setServices] = useState([]);
+
     useEffect(() => {
         fetch('./fackeDb.json')
             .then(res => res.json())
@@ -26,8 +27,8 @@ const Services = () => {
 
                     ></Service>)
 
-                }
 
+                }
 
             </div>
 
