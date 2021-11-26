@@ -1,8 +1,6 @@
 
 import React from 'react';
-
 import { FaGoogle } from 'react-icons/fa';
-
 import './Signup.css';
 import useAuth from '../../hook/useAuth';
 
